@@ -1,5 +1,7 @@
-import React from 'react';
-
+export const metadata = {
+    title:"rug cleaning||Contact",
+    description:"Rug cleaning service available contact page"
+}
 const ContactPage = () => {
     return (
         <div>

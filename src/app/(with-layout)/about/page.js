@@ -1,5 +1,7 @@
-import React from 'react';
-
+export const metadata={
+    title:"carpet wash||about",
+    description:"About page for washing or cleaning services",
+}
 const AboutPage = () => {
     return (
         <div>

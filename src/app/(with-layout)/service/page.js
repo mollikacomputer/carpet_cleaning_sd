@@ -1,5 +1,7 @@
-import React from 'react';
-
+export const metadata={
+    title:"carpet cleaning service",
+    description:"carpet cleaning service description",
+};
 const ServicePage = () => {
     return (
         <div>

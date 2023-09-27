@@ -1,5 +1,7 @@
-import React from 'react';
-
+export const metadata={
+    title:"carpet cleaner||blog ",
+    description:"carpet cleaner blog page",
+}
 const BlogPage = () => {
     return (
         <div>
