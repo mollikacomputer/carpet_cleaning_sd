@@ -25,7 +25,7 @@ const navItemsLink = [
 const Navbar = () => {
     return (
         <nav className="flex justify-between container mx-auto">
-            <h2 className="font-2xl" >Ranjit</h2>
+            <h2 className="font-2xl" >Carpet Cleaner company</h2>
             <ul className="flex">
                 {navItemsLink.map(({path, title})=>(
                     <li className="mx-2" key={path}>
