@@ -43,7 +43,7 @@ const user = null;
       <label className="swap-rotate swap btn-ghost btn-circle btn ml-2 bg-white dark:bg-slate-800 lg:hidden">
         <input
           checked={navToggle}
-          onClick={() => setNavToggle((pre) => !pre)}
+          onChange={() => setNavToggle((pre) => !pre)}
           // onChange={() => setNavToggle((pre) => !pre)}
           type="checkbox"
         />
