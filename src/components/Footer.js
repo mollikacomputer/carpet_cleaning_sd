@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import React from 'react';
-
+import Link from 'next/link';
+import { FaFacebookF, FaTumblr, FaYoutube } from "react-icons/fa";
 const Footer = () => {
     return (
         <div>
@@ -37,13 +37,13 @@ const Footer = () => {
                 <div className="md:place-self-center md:justify-self-end">
                     <div className="grid grid-flow-col gap-4">
                     <Link href={'/'}>
-                        Twitter
+                        <FaFacebookF/>
                     </Link> 
                     <Link href={'/'}>
-                    Facebook
+                        <FaTumblr/>
                     </Link> 
                     <Link href={'/'}>
-                        Youtube
+                        <FaYoutube/>
                     </Link>
                     </div>
                 </div>
