@@ -5,15 +5,14 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey:process.env.Next_Public_apiKey, 
-  authDomain:process.env.Next_Public_authDomain,
-  projectId:process.env.Next_Public_projectId,
-  storageBucket:process.env.Next_Public_storageBucket,
-  messagingSenderId:process.env.Next_Public_messagingSenderId,
-  appId:process.env.Next_Public_appId,
+  apiKey: "AIzaSyANW72Exbq9VhXjS79yQ1xZf0wLWPErXy4",
+  authDomain: "carpetcleaningsdpro-b2335.firebaseapp.com",
+  projectId: "carpetcleaningsdpro-b2335",
+  storageBucket: "carpetcleaningsdpro-b2335.appspot.com",
+  messagingSenderId: "30115805630",
+  appId: "1:30115805630:web:595560b317d0ae3037e1ef"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
 export default app;
