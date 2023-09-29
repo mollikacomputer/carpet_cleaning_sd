@@ -1,11 +1,12 @@
 "use client";
 
+import AuthProvider from "../contexts/AuthProvider";
 import ThemeProvider from "./ThemeProvider";
 
 const Providers = ({ children }) => {
   return (
     <ThemeProvider>
-      {children}
+      <AuthProvider>{children}</AuthProvider>
     </ThemeProvider>
   );
 };
