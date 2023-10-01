@@ -3,13 +3,13 @@ import React from "react";
 
 const SingleService = ({service}) => {
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
+    <div className="card w-96 bg-base-100 shadow-xl my-4">
       <figure>
         <Image
         width={400}
         height={200}
         alt="image"
-        src={service.imageUrl}
+        src={service.imgUrl}
         />
       </figure>
       <div className="card-body">

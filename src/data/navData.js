@@ -23,6 +23,10 @@ export const commonNavData = [
       path: "/dashboard",
       title: "Dashboard",
     },
+    // {
+    //   path: "/profile",
+    //   title: "Profile",
+    // },
   ];
   
   export const beforeLoginNavData = [
