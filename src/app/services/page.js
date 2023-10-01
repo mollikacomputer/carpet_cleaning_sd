@@ -6,7 +6,6 @@ export const metadata={
 };
 const ServicePage = () => {
    
-
     return (
         <div className="container mx-auto my-16">
           <Services/>

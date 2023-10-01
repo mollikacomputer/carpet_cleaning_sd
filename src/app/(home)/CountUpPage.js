@@ -12,44 +12,48 @@ const CountUpPage = () => {
 
   return (
   <ScrollTrigger onEnter={()=> setCounterOn(true)} onExit={()=> setCounterOn(false)} >
-    
-    <div className={Styles.container}>
-      <div className={Styles.wrapper}>
-        <div className={Styles.countupstyle}>
-            
-            <span className={Styles.num}>
-            {counterOn && <CountUp isCounting start={0} end={1120} duration={3.2} /> }  
-            </span>
-            <div className="flex items-center justify-center">
-                <FaRegUser fontSize={70} />
-            </div>
-            
-        </div>
-      </div>
-      <div className={Styles.wrapper}>
-        <div className={Styles.countupstyle}>
-            <span className={Styles.num} > 
-            {counterOn && <CountUp isCounting start={0} end={525} duration={3.2} /> }
-            </span>  
-            <div className="flex items-center justify-center">
-                <GiVacuumCleaner fontSize={70} />
-            </div>
-        </div>
-      </div>
-      <div className={Styles.wrapper}>
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-16 px-10">
 
-        <div className={Styles.countupstyle}>
-            <span className={Styles.num}>
-            {counterOn && <CountUp isCounting start={0} end={510} duration={3.2} /> }
-            </span>  
-            <div className="flex items-center justify-center">
-                <FaRug fontSize={70} />
-            </div>
-            
+       <div
+        className="card max-w-mx bg-base-100 shadow-xl p-4 justify-center items-center"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000"
+        data-aos="fade-right"
+      >
+        <div className="mb-6">
+        <FaRegUser fontSize={40} />
+        </div>
+        <div className="text-3xl font-bold mb-6">
+        {counterOn && <CountUp isCounting start={0} end={1120} duration={3.2} /> }
         </div>
       </div>
-      {/* {firstTest()} */}
-    </div>
+       <div
+        className="card bg-base-100 shadow-xl p-4 justify-center items-center"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000"
+        data-aos="fade-right"
+      >
+        <div className="mb-6">
+        <GiVacuumCleaner fontSize={40} />
+        </div>
+        <div className="text-3xl font-bold mb-6">
+        {counterOn && <CountUp isCounting start={0} end={1120} duration={3.2} /> }
+        </div>
+      </div>
+       <div
+        className="card bg-base-100 shadow-xl p-4 justify-center items-center"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000"
+        data-aos="fade-right"
+      >
+        <div className="mb-6">
+        <FaRug fontSize={40} />
+        </div>
+        <div className="text-3xl font-bold mb-6">
+        {counterOn && <CountUp isCounting start={0} end={1120} duration={3.2} /> }
+        </div>
+      </div>
+      </div>
   </ScrollTrigger>
   );
 };
