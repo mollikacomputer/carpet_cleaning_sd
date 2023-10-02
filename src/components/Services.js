@@ -1,8 +1,10 @@
 import SingleService from "@/app/services/SingleService";
 import getServices from "@/utils/getServices";
+import Link from "next/link";
 
+export const revalidate = 0;
 
-const Services = async() => {
+const Services = async({params:id}) => {
     const services = await getServices();
   return (
     <div>
